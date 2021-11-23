@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "login_forms",
+  "info": {
+    "name": "LoginForm"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "emailInput": {
+      "type": "email"
+    },
+    "emailImageInput": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "senhaInput": {
+      "type": "password"
+    },
+    "senhaImagemInput": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
